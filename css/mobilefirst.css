@@ -1,0 +1,324 @@
+/* Fonts ------------------------- */
+
+@font-face {
+    font-family: 'junction-regular';
+    src: url('../font/junction-regular.eot');
+    src: url('../font/junction-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/junction-regular.ttf') format('truetype'),
+         url('../font/junction-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../font/Roboto-Regular.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main Styles -------------------- */
+
+header {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: #ccf9ff;
+    margin: 0;
+    font-size: 1em;
+    font-family: roboto-regular, geneva;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: -5px 8px 10px black;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: .5em;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "junction-regular", Helvetica, Arial, sans-serif;
+    
+}
+
+p {
+    margin: 2em 0;
+}
+
+ol {
+    margin: 0;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+main {
+    line-height: 1.5;
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    margin: 60px 0;
+    width: 100%;
+    text-align: center;
+    border-top: solid black 5px;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: -5px 8px 10px black;
+    margin: 30px auto;
+}
+
+figure {
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+    width: fit-content;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+    letter-spacing: .5px;
+}
+
+/* Class Styles ---------------------- */
+
+#main-header {
+    background: url(../img/pool.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    margin: 0;
+    border-bottom: solid black 2px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.nav {
+    background-color: black;
+    min-height: 30px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.stance img {
+    margin-bottom: 44px;
+}
+
+.aim img {
+    margin-bottom: 71px;
+}
+
+.stance,
+.stroke,
+.aim,
+.attitude {
+    display: inline; 
+    text-align: center; 
+}
+
+.container {
+    padding-top: 20px;
+    margin: auto;
+}
+
+.border {
+    border-bottom: solid gray 2px;
+    padding-bottom: 30px;
+}
+
+.copy {
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.sections {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team {
+    display: block;
+}
+
+/* Link Styles -------------------- */
+
+.nav a:hover {
+   color: white;
+}
+
+.nav li {
+    color: gray;
+    font-size: 1.5em;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    display: inline;
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: gray;
+}
+
+/* Media Queries ----------------- */
+
+@media (min-width: 769px) {
+
+	main {
+		width: 90%;
+		max-width: 1150px;
+		margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 5em;
+    }
+
+    .nav {
+       margin: auto;
+    }
+
+    .nav li {
+        display: inline;
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    .col {
+        float: left;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .history,
+    .basics {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .fun {
+        float: none;
+        clear: both;
+    }
+
+    .history,
+    .basics {
+        border-bottom: none;
+    }
+
+    .stance,
+    .stroke,
+    .aim,
+    .attitude {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .stance,
+    .stroke,
+    .aim,
+    .attitude {
+        width: 45%;
+    }
+
+    .stance,
+    .aim {
+        padding-right: 20px;
+    }
+
+    .stroke,
+    .attitude {
+        padding-left: 20px;
+    }
+
+    figure {
+        float: left;
+        margin: 0 25px 10px 0;
+    }
+
+    .team {
+        margin: 0;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+        
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        width: 75%;
+        line-height: 1.5;
+        margin: 0 auto;
+    }
+
+    .col {
+        float: left;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .history,
+    .fun {
+        width: 30%;
+    }
+
+    .fun {
+        clear: none;
+    }
+
+    .basics {
+        width: 40%;
+    }
+
+    .history,
+    .basics {
+        border-bottom: none;
+    }
+  
+}

@@ -1,0 +1,210 @@
+/* Fonts ------------------------- */
+
+@font-face {
+    font-family: 'junction-regular';
+    src: url('../font/junction-regular.eot');
+    src: url('../font/junction-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/junction-regular.ttf') format('truetype'),
+         url('../font/junction-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../font/Roboto-Regular.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main Styles -------------------- */
+
+header {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: #ccf9ff;
+    margin: 0;
+    font-size: 1em;
+    font-family: roboto-regular, geneva;
+}
+
+h1 {
+    font-size: 5em;
+    text-shadow: -5px 8px 10px black;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "junction-regular", Helvetica, Arial, sans-serif;
+    
+}
+
+ol {
+    margin: 0;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+main {
+    line-height: 1.5;
+    width: 75%;
+    margin: auto;
+    max-width: 900px;
+}
+
+footer {
+    margin: 60px 0;
+    width: 100%;
+    text-align: center;
+    border-top: solid black 5px;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: -5px 8px 10px black;
+    margin: 30px auto;
+    display: block;
+}
+
+/* Class Styles ---------------------- */
+
+#main-header {
+    background: url(../img/pool.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.nav {
+    background-color: black;
+    min-height: 30px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.stance img {
+    margin-bottom: 44px;
+}
+
+.aim img {
+    margin-bottom: 71px;
+}
+
+.stance,
+.stroke,
+.aim,
+.attitude {
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+}
+
+.stance,
+.aim {
+    padding-right: 20px;
+}
+
+.stroke,
+.attitude {
+    padding-left: 20px;
+}
+
+.container {
+    padding-top: 20px;
+    margin: auto;
+}
+
+.border {
+    border-bottom: solid gray 2px;
+    padding-bottom: 30px;
+}
+
+.experience p,
+.foundation p {
+    margin-bottom: 30px;
+}
+
+.copy {
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.sections {
+    margin-bottom: 40px;
+}
+
+.team {
+    display: block;
+}
+
+/* Link Styles -------------------- */
+
+.nav a:hover {
+   color: white;
+}
+
+.nav li {
+    color: gray;
+    font-size: 1.5em;
+    list-style: none;
+    display: inline;
+    padding: 0 40px;
+}
+
+nav a:visited {
+    color: gray;
+}
+
+  /* Media Queries ----------------- */
+
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    .stance,
+    .stroke,
+    .aim,
+    .attitude {
+        display: inline;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .nav li {
+        display: inline-block;
+    }
+}
